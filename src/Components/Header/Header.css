@@ -1,6 +1,9 @@
 .header {
+  position: fixed;
   padding-top: 31px;
-  padding-left: 70px;
+  padding-left: 50px;
+  top: 0;
+  left: 0;
 }
 .list {
   margin: 0;
@@ -122,6 +125,7 @@
 .more-link {
   text-decoration: none;
   margin-left: auto;
+  margin-right: 10px;
 }
 .user-username {
   text-decoration: none;

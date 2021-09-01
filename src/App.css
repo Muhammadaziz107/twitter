@@ -200,3 +200,6 @@ template {
 .wrapper {
   display: flex;
 }
+.twitter-main {
+  margin: 0 auto;
+}
