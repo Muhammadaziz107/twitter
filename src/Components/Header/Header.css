@@ -11,6 +11,124 @@
 }
 
 .list__item {
+  display: flex;
   margin: 15px 0;
   font-weight: 700;
+}
+.list__item:nth-child(1)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/home.svg);
+  background-size: cover;
+}
+.list__item:nth-child(2)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/explore.svg);
+  background-size: cover;
+}
+.list__item:nth-child(3)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/notification.svg);
+  background-size: cover;
+}
+.list__item:nth-child(4)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/messages.svg);
+  background-size: cover;
+}
+.list__item:nth-child(5)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/bookmarks.svg);
+  background-size: cover;
+}
+.list__item:nth-child(6)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/lists.svg);
+  background-size: cover;
+}
+.list__item:nth-child(7)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/profile.svg);
+  background-size: cover;
+}
+.list__item:nth-child(8)::before {
+  display: block;
+  content: "";
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Assets/images/more.svg);
+  background-size: cover;
+}
+
+.list__item__link {
+  text-decoration: none;
+  color: black;
+}
+.header-btn {
+  color: white;
+  padding: 15px 89px;
+  background-color: #1d9bf0;
+  border-radius: 27.5px;
+  border: none;
+}
+.header-btn:hover {
+  opacity: 0.8;
+}
+.header-btn:active {
+  opacity: 0.6;
+}
+.header-wrapper {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+}
+.header-wrapper__span {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.user-name {
+  margin-bottom: -1px;
+}
+.more-link {
+  text-decoration: none;
+  margin-left: auto;
+}
+.user-username {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+.user-logo {
+  border-radius: 50%;
 }
