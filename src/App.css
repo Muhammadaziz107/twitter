@@ -197,3 +197,6 @@ template {
 [hidden] {
   display: none;
 }
+.wrapper {
+  display: flex;
+}

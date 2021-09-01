@@ -1,0 +1,48 @@
+.user-tweet {
+  width: 910px;
+  padding: 20px;
+  border: 1px solid #d8d8d8;
+  border-top: none;
+}
+.user-typing {
+  display: flex;
+}
+
+.user-typing__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  border: none;
+  outline: none;
+  font-size: 22px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.user-typing__wrapper div {
+  margin-left: 12px;
+}
+.btn-typing {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.user-logo {
+  width: 60px;
+  height: 60px;
+}
+.tweet-btn {
+  width: 108px;
+  height: 50px;
+  margin-left: auto;
+  margin-top: auto;
+  padding: 15px 30px;
+  background-color: #1da1f2;
+  border-radius: 120px;
+  border: #1da1f2;
+  color: white;
+  opacity: 0.4;
+}

@@ -1,0 +1,16 @@
+.intro {
+  width: 910px;
+  height: 72px;
+  border: 1px solid #d8d8d8;
+  /* margin-right: auto; */
+}
+.intro__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.theme-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
