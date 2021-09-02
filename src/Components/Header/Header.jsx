@@ -13,7 +13,7 @@ function Header() {
         <img src={Logo} alt="" width="40" height="33" />
       </a>
       <ul className="list">
-        <li className={`list__item ${theme}`}>
+        <li className="list__item">
           <a className="list__item__link" href="aaaa">
             Home
           </a>

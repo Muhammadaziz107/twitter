@@ -92,7 +92,7 @@
 
 .list__item__link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .header-btn {
   color: white;
@@ -134,4 +134,8 @@
 }
 .user-logo {
   border-radius: 50%;
+}
+
+.header-dark {
+  color: white;
 }
