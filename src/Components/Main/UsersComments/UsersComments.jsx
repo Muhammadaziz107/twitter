@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./UserComments.css";
 import userlogo1 from "../../../Assets/images/userlogo1.jpg";
 import userlogo2 from "../../../Assets/images/userlogo2.jpg";
@@ -9,7 +11,10 @@ import Vector9 from "../../Lib/Vector9";
 import Vector10 from "../../Lib/Vector10";
 import More from "../../Lib/more";
 import img1 from "../../../Assets/images/img1.jpg";
+
+import { Context } from "../../../Context/Theme";
 function UserComments() {
+  const { theme } = React.useContext(Context);
   return (
     <section className="user-comment">
       <div className="user-comments__wrapper">
@@ -17,8 +22,8 @@ function UserComments() {
           <img className="userlogo2" src={userlogo1} alt="nimadur" />
 
           <span className="div1__wrapper">
-            <div className="div1__wrapper__wrapper">
-              <p>Designsta</p>
+            <div className={`div1__wrapper__wrapper ${theme}`}>
+              <p className={`p ${theme}`}>Designsta</p>
               <a href="twitter.com">@inner · 25m</a>
             </div>
             <p className="paragraph1">

@@ -13,6 +13,7 @@
   flex-direction: column;
 }
 .input {
+  width: 600px;
   border: none;
   outline: none;
   font-size: 22px;

@@ -4,17 +4,17 @@ import "./Header.css";
 import Logo from "../../Assets/images/logo.png";
 import userLogo from "../../Assets/images/user-logo.jpg";
 import moreLink from "../../Assets/images/Vector1.png";
-import useTheme from "../../Hooks/useTheme";
+import { Context } from "../../Context/Theme";
 function Header() {
-  const [theme, setTheme] = useTheme();
+  const { theme } = React.useContext(Context);
   return (
-    <header className={`header ${theme}`}>
-      <a href="home.html" className="logo-link">
+    <header className={`header`}>
+      <a href="home" className="logo-link">
         <img src={Logo} alt="" width="40" height="33" />
       </a>
-      <ul className="list">
-        <li className="list__item">
-          <a className="list__item__link" href="aaaa">
+      <ul className={`list `}>
+        <li className={`list__item `}>
+          <a className={`list__item__link ${theme}`} href="aaaa">
             Home
           </a>
         </li>

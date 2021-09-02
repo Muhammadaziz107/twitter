@@ -1,3 +1,5 @@
+import React from "react";
+
 import UserLogo from "../../../Assets/images/user-logo.jpg";
 import Vector1 from "../../Lib/Vector1";
 import Vector2 from "../../Lib/Vector2";
@@ -5,9 +7,12 @@ import Vector3 from "../../Lib/Vector3";
 import Vector4 from "../../Lib/Vector4";
 import Vector5 from "../../Lib/Vector5";
 import "./UserTweet.css";
+
+import { Context } from "../../../Context/Theme";
 function UserTweet() {
+  const { theme } = React.useContext(Context);
   return (
-    <section className="user-tweet">
+    <section className={`user-tweet `}>
       <div className="user-typing">
         <img
           className="user-logo"
@@ -18,7 +23,11 @@ function UserTweet() {
         />
 
         <span className="user-typing__wrapper">
-          <input className="input" type="text" placeholder="What’s happening" />
+          <input
+            className={`input ${theme}`}
+            type="text"
+            placeholder="What’s happening"
+          />
           <div>
             <button className="btn-typing" type="button">
               <Vector1 />
