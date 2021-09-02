@@ -14,3 +14,15 @@
   border: none;
   cursor: pointer;
 }
+.uz {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+.en {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* margin-left: auto; */
+}
