@@ -4,14 +4,16 @@ import "./Header.css";
 import Logo from "../../Assets/images/logo.png";
 import userLogo from "../../Assets/images/user-logo.jpg";
 import moreLink from "../../Assets/images/Vector1.png";
+import useTheme from "../../Hooks/useTheme";
 function Header() {
+  const [theme, setTheme] = useTheme();
   return (
-    <header className="header">
+    <header className={`header ${theme}`}>
       <a href="home.html" className="logo-link">
         <img src={Logo} alt="" width="40" height="33" />
       </a>
       <ul className="list">
-        <li className="list__item">
+        <li className={`list__item ${theme}`}>
           <a className="list__item__link" href="aaaa">
             Home
           </a>

@@ -14,7 +14,7 @@ function UserComments() {
     <section className="user-comment">
       <div className="user-comments__wrapper">
         <div className="user-comments__div1">
-          <img src={userlogo1} alt="nimadur" />
+          <img className="userlogo2" src={userlogo1} alt="nimadur" />
 
           <span className="div1__wrapper">
             <div className="div1__wrapper__wrapper">
@@ -55,7 +55,7 @@ function UserComments() {
         {/* ================== */}
 
         <div className="user-comments__div1">
-          <img src={userlogo2} alt="nimadur" />
+          <img className="userlogo2" src={userlogo2} alt="nimadur" />
 
           <span className="div1__wrapper">
             <div className="div1__wrapper__wrapper">
@@ -97,7 +97,7 @@ function UserComments() {
         {/* ======================= */}
 
         <div className="user-comments__div1">
-          <img src={userlogo3} alt="nimadur" />
+          <img className="userlogo2" src={userlogo3} alt="nimadur" />
 
           <span className="div1__wrapper">
             <div className="div1__wrapper__wrapper">

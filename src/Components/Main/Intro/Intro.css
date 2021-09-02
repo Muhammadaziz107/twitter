@@ -24,5 +24,20 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* margin-left: auto; */
+}
+.span__intro-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme {
+  display: block;
+  width: 60px;
+  height: 30px;
+  outline: none;
+}
+.uz-icon {
+  display: block;
+}
+.en-icon {
+  display: block;
 }
