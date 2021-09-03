@@ -35,9 +35,11 @@
   height: 30px;
   outline: none;
 }
-.uz-icon {
+
+.lang {
   display: block;
-}
-.en-icon {
-  display: block;
+  width: 60px;
+  height: 30px;
+  outline: none;
+  margin-right: 20px;
 }

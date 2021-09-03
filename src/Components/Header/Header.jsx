@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Header.css";
 import Logo from "../../Assets/images/logo.png";
 import userLogo from "../../Assets/images/user-logo.jpg";
 import moreLink from "../../Assets/images/Vector1.png";
 import { Context } from "../../Context/Theme";
+import content from "../../Localization/Content";
 function Header() {
+  const [lang, setLang] = React.useState("en");
   const { theme } = React.useContext(Context);
   return (
     <header className={`header`}>
@@ -15,7 +17,7 @@ function Header() {
       <ul className={`list `}>
         <li className={`list__item `}>
           <a className={`list__item__link ${theme}`} href="aaaa">
-            Home
+            {content[lang].home}
           </a>
         </li>
         <li className="list__item">

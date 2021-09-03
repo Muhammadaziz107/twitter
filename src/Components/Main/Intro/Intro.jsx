@@ -1,9 +1,12 @@
+import React, { useState } from "react";
+
 import ThemeIcon from "../../Lib/ThemeIcon";
 import "./Intro.css";
-import Uzicon from "../../Lib/Uz";
-import Usaicon from "../../Lib/Usa";
 import useTheme from "../../../Hooks/useTheme";
+
+import content from "../../../Localization/Content";
 function Intro() {
+  const [lang, setLang] = useState("en");
   const [theme, setTheme] = useTheme();
 
   return (
@@ -11,14 +14,16 @@ function Intro() {
       <div className="intro__wrapper">
         <h2 className="intro__wrapper__heading">Home</h2>
 
-        <span className="span__intro-wrapper">
-          <button type="button" className="uz">
-            <Uzicon />
-          </button>
-          <button type="button" className="en">
-            <Usaicon />
-          </button>
-          {/* ================ */}
+        <span
+          className="span__intro-wrapper"
+          onChange={evt => {
+            setLang(evt.target.value);
+          }}
+        >
+          <select className="lang">
+            <option value="en">en</option>
+            <option value="uz">uz</option>
+          </select>
           <select
             className="theme"
             value={theme}
