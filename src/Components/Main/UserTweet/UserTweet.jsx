@@ -10,7 +10,7 @@ import "./UserTweet.css";
 
 import { Context } from "../../../Context/Theme";
 function UserTweet() {
-  const tweetBtn = useRef(null);
+  const tweetBtn = useRef();
   // const [tweet, setTweet] = useState();
   const { theme } = React.useContext(Context);
 
