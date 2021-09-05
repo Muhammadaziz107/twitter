@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import UserLogo from "../../../Assets/images/user-logo.jpg";
 import Vector1 from "../../Lib/Vector1";
@@ -10,9 +10,12 @@ import "./UserTweet.css";
 
 import { Context } from "../../../Context/Theme";
 function UserTweet() {
+  const tweetBtn = useRef(null);
+  // const [tweet, setTweet] = useState();
   const { theme } = React.useContext(Context);
+
   return (
-    <section className={`user-tweet `}>
+    <section className={`user-tweet`}>
       <div className="user-typing">
         <img
           className="user-logo"
@@ -46,7 +49,7 @@ function UserTweet() {
             </button>
           </div>
         </span>
-        <button className="tweet-btn" type="button">
+        <button disabled className="tweet-btn" type="button" ref={tweetBtn}>
           Tweet
         </button>
       </div>
