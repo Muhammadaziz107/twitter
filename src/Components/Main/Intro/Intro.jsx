@@ -12,15 +12,15 @@ function Intro() {
   return (
     <section className={`intro ${theme}`}>
       <div className="intro__wrapper">
-        <h2 className="intro__wrapper__heading">Home</h2>
+        <h2 className="intro__wrapper__heading">{content[lang].home}</h2>
 
-        <span
-          className="span__intro-wrapper"
-          onChange={evt => {
-            setLang(evt.target.value);
-          }}
-        >
-          <select className="lang">
+        <span className="span__intro-wrapper">
+          <select
+            className="lang"
+            onChange={evt => {
+              setLang(evt.target.value);
+            }}
+          >
             <option value="en">en</option>
             <option value="uz">uz</option>
           </select>
