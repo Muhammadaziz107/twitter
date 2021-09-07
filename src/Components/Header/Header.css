@@ -98,9 +98,6 @@
 .dark .list__item__link {
   color: #fff;
 }
-.dark .list__item:nth-child(7)::before path {
-  fill: #fff;
-}
 
 .header-btn {
   color: white;
