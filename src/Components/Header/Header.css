@@ -94,6 +94,14 @@
   text-decoration: none;
   color: black;
 }
+
+.dark .list__item__link {
+  color: #fff;
+}
+.dark .list__item:nth-child(7)::before path {
+  fill: #fff;
+}
+
 .header-btn {
   color: white;
   padding: 15px 89px;

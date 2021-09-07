@@ -1,5 +1,6 @@
 .user-comment {
-  width: 810px;
+  width: 100%;
+  max-width: 810px;
   margin-bottom: 50px;
 }
 

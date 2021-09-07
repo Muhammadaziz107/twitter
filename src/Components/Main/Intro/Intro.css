@@ -1,5 +1,6 @@
 .intro {
-  width: 810px;
+  width: 100%;
+  max-width: 810px;
   height: 72px;
   border: 1px solid #d8d8d8;
   /* margin-right: auto; */
