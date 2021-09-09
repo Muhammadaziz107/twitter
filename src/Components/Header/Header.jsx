@@ -14,7 +14,7 @@ function Header() {
       </a>
       <ul className={`list `}>
         <li className={`list__item `}>
-          <a className={`list__item__link ${theme}`} href="aaaa">
+          <a className={`list__item__link `} href="aaaa">
             Home
           </a>
         </li>

@@ -16,7 +16,9 @@
   display: flex;
   margin: 15px 0;
   font-weight: 700;
+  margin-bottom: 20px;
 }
+
 .list__item:nth-child(1)::before {
   display: block;
   content: "";
