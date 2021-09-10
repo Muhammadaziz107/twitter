@@ -1,12 +1,12 @@
 import React from "react";
-
+import { NavLink, Switch, Route } from "react-router-dom";
 import "./Header.css";
 import Logo from "../../Assets/images/logo.png";
 import userLogo from "../../Assets/images/user-logo.jpg";
 import moreLink from "../../Assets/images/Vector1.png";
-import { Context } from "../../Context/Theme";
+import Home from "../../Pages/Home/Home";
+import Profile from "../../Pages/Profile/Profile";
 function Header() {
-  const { theme } = React.useContext(Context);
   return (
     <header className={`header`}>
       <a href="home" className="logo-link">
@@ -14,44 +14,28 @@ function Header() {
       </a>
       <ul className={`list `}>
         <li className={`list__item `}>
-          <a className={`list__item__link `} href="aaaa">
-            Home
-          </a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Explore
-          </a>
+          <NavLink to="/explore">Explore</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Notifications
-          </a>
+          <NavLink to="/notifications">Notifications</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Messages
-          </a>
+          <NavLink to="/messages">Messages</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Bookmarks
-          </a>
+          <NavLink to="/bookmarks">Bookmarks</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Lists
-          </a>
+          <NavLink to="/lists">Lists</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            Profile
-          </a>
+          <NavLink to="/profile">Profile</NavLink>
         </li>
         <li className="list__item">
-          <a className="list__item__link" href="aaaa">
-            More
-          </a>
+          <NavLink to="/more">More</NavLink>
         </li>
       </ul>
       <button className="header-btn">Tweet</button>
