@@ -7,7 +7,6 @@ import UserTweet from "./Components/Main/UserTweet/UserTweet";
 import UserComments from "./Components/Main/UsersComments/UsersComments";
 import Footer from "./Components/Footer/Footer";
 import { Context } from "./Context/Theme";
-
 function App() {
   const { theme } = React.useContext(Context);
   return (
