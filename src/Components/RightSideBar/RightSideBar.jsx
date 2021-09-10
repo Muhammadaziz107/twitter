@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./RightSideBar.css";
 import Search from "../Lib/search";
 import SettingsIcon from "../Lib/settings";
 import More from "../Lib/more";
@@ -6,7 +6,7 @@ import user1 from "../../Assets/images/users1.jpg";
 import user2 from "../../Assets/images/user2.jpg";
 function Footer() {
   return (
-    <footer className="footer">
+    <div className="footer">
       <div className="footer__wrapper">
         <label className="input-wrapper">
           <Search />
@@ -101,7 +101,7 @@ function Footer() {
           </span>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
 
