@@ -6,13 +6,13 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider as AuthProvider } from "./Context/Authentication";
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
+    <ThemeProvider>
+      <BrowserRouter>
         <AuthProvider>
           <App />
         </AuthProvider>
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
