@@ -1,0 +1,35 @@
+.profile-wrapper {
+  margin: 0 auto;
+}
+
+.profile__header {
+  width: 810px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  padding: 0 20px;
+}
+.back-btn {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__wrapper {
+  margin-left: 40px;
+}
+.header__username {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: -15px;
+}
+.header__password {
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.6;
+}
