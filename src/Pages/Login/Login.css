@@ -1,0 +1,54 @@
+.login-wrapper {
+  margin: 100px auto;
+}
+.login {
+  width: 400px;
+}
+.email-input {
+  width: 400px;
+  padding: 20px 20px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+.password-input {
+  width: 400px;
+  padding: 20px 20px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+.login-heading {
+  font-size: 32px;
+  line-height: 49px;
+  font-weight: 900;
+  color: #000000;
+}
+.login-btn {
+  width: 400px;
+  padding: 18px 150px;
+  background-color: #1da1f2;
+  border-radius: 76px;
+  outline: none;
+  border: 1px solid #1da1f2;
+  color: white;
+  font-size: 18px;
+}
+.link-wrapper {
+  margin-top: 40px;
+}
+.login-forgot-password {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1da1f2;
+}
+.login__sign-up {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1da1f2;
+  margin-left: 110px;
+}
