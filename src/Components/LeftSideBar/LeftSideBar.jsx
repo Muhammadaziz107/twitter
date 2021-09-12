@@ -66,9 +66,9 @@ function Header() {
         </div>
       </div>
       <Switch>
-        <Public to="/" component={Home} exact />
-        <Private to="/profile" component={Profile} exact />
-        <Public to="/login" component={Login} exact />
+        <Public path="/" component={Home} exact />
+        <Private path="/profile" component={Profile} exact />
+        <Public path="/login" component={Login} exact />
       </Switch>
     </>
   );
