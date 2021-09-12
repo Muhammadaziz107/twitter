@@ -1,0 +1,27 @@
+.profileintro-wrapper {
+  position: relative;
+  background-image: url(../../../Assets/images/profile-intro-bg.jpg);
+  width: 810px;
+  height: 280px;
+  background-position: center;
+  background-size: cover;
+}
+.ProfileIntroUserImg {
+  position: absolute;
+  border-radius: 50%;
+  top: 100%;
+  transform: translate(20%, -50%);
+}
+.edit-profile {
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  width: 120px;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  border-radius: 50px;
+  transform: translateY(50%);
+  cursor: pointer;
+}

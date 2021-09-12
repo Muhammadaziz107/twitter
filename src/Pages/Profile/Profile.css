@@ -33,3 +33,7 @@
   color: #000000;
   opacity: 0.6;
 }
+.profileinfo__wrapper2 {
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+}
