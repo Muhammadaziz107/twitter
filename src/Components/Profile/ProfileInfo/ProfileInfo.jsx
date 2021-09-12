@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProfileInfo.css";
-
 function ProfileInfo() {
   return (
     <div className="profileinfo-wrapper">
