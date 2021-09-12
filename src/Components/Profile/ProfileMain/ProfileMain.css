@@ -1,0 +1,32 @@
+.ProfileMain-wrapper {
+  margin-top: 40px;
+}
+.profilemain__header {
+  border: 1px solid #d4d4d4;
+  padding: 3px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.profilemain__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profilemain__list__item + .profilemain__list__item {
+  margin-left: 176px;
+}
+.profilemain__list__item:nth-child(1) {
+  /* margin-left: 5px; */
+  box-shadow: 0 3px #1da1f2;
+}
+.profilemain__list__item__link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.profilemain__list__item:nth-child(4) {
+  /* margin-right: 10px; */
+}

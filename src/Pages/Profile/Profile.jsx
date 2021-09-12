@@ -3,6 +3,7 @@ import Back from "../../Components/Lib/back";
 import "./Profile.css";
 import ProfileIntro from "../../Components/Profile/ProfileIntro/ProfileIntro";
 import ProfileInfo from "../../Components/Profile/ProfileInfo/ProfileInfo";
+import ProfileMain from "../../Components/Profile/ProfileMain/ProfileMain";
 function Profile() {
   return (
     <div className="profile-wrapper">
@@ -20,6 +21,7 @@ function Profile() {
         <div className="profileinfo__wrapper2">
           <ProfileIntro />
           <ProfileInfo />
+          <ProfileMain />
         </div>
       </div>
     </div>
