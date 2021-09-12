@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import ThemeIcon from "../../Lib/ThemeIcon";
 import "./Intro.css";
 import useTheme from "../../../Hooks/useTheme";
-
 import content from "../../../Localization/Content";
 function Intro() {
   const [lang, setLang] = useState("en");

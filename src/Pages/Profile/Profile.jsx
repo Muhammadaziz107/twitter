@@ -10,7 +10,7 @@ function Profile() {
       <div className="profile">
         <header className="profile__header">
           <button className="back-btn" type="button">
-            <Back />
+            <Back className="back-btn-svg" />
           </button>
 
           <span className="header__wrapper">

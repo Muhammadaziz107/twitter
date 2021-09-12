@@ -46,9 +46,7 @@
   border-radius: 120px;
   border: #1da1f2;
   color: white;
-  /* opacity: 1; */
 }
-
 @media olny screen and (max-width: 1434px) {
   .user-tweet {
     width: 100%;

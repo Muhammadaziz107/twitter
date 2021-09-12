@@ -4,12 +4,15 @@ import App from "./App";
 import { Provider as ThemeProvider } from "./Context/Theme";
 import { BrowserRouter } from "react-router-dom";
 import { Provider as AuthProvider } from "./Context/Authentication";
+import { Provider as LangProvider } from "./Context/Lang";
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <BrowserRouter>
         <AuthProvider>
-          <App />
+          <LangProvider>
+            <App />
+          </LangProvider>
         </AuthProvider>
       </BrowserRouter>
     </ThemeProvider>

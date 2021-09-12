@@ -5,57 +5,93 @@
 }
 
 .user-comments__div1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   border: 1px solid #d8d8d8;
   border-top: none;
   padding: 20px;
 }
 
 .div1__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .div1__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.div1__div__paragraph {
-}
+
 .div1__div__paragraph:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 15px;
 }
+
 .div1__div__paragraph:nth-child(1) p {
   margin-left: 10px;
 }
+
 .div1__div__paragraph:nth-child(2) p {
   margin-left: 10px;
 }
+
 .div1__div__paragraph:nth-child(3) p {
   margin-left: 10px;
 }
+
 .div1__div__paragraph:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  margin-left: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
 }
+
 .div1__div__paragraph:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  margin-left: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
 }
+
 .div1__div__paragraph:nth-child(4) {
-  margin-left: 100px;
+  margin-left: 50px;
 }
+
 .div1__div__paragraph:nth-child(5) {
-  margin-left: 100px;
+  margin-left: 50px;
 }
+
 .div1__wrapper__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -13px;
   margin-left: 15px;
 }
@@ -66,6 +102,7 @@
   line-height: 27px;
   color: black;
 }
+
 .div1__wrapper__wrapper a {
   text-decoration: none;
   color: black;
@@ -73,6 +110,7 @@
   font-size: 18px;
   margin-left: 5px;
 }
+
 .paragraph1 {
   font-size: 18px;
   line-height: 24px;
@@ -80,12 +118,989 @@
   margin-top: -17px;
   margin-left: 15px;
 }
+
 .more-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   margin-left: auto;
 }
+
 .userlogo2 {
   border-radius: 50%;
 }
+
+.dark .paragraph1 {
+  color: white;
+}
+
+.dark .div1__wrapper__wrapper p {
+  color: white;
+}
+
+.dark .div1__wrapper__wrapper a {
+  color: #fff;
+}
+
+#main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  color: #888888;
+}
+
+#main-content a {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #008a68;
+}
+
+svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 60px;
+}
+
+svg #heart {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: animateHeartOut 0.3s linear forwards;
+          animation: animateHeartOut 0.3s linear forwards;
+}
+
+svg #main-circ {
+  -webkit-transform-origin: 29.5px 29.5px;
+          transform-origin: 29.5px 29.5px;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked + label svg #heart {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  fill: #e2264d;
+  -webkit-animation: animateHeart 0.3s linear forwards 0.25s;
+          animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+#checkbox:checked + label svg #main-circ {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: animateCircle 0.3s linear forwards;
+          animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+
+#checkbox:checked + label svg #grp1 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp1 #oval1 {
+  -webkit-transform: scale(0) translate(0, -30px);
+          transform: scale(0) translate(0, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp1 #oval2 {
+  -webkit-transform: scale(0) translate(10px, -50px);
+          transform: scale(0) translate(10px, -50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp2 #oval1 {
+  -webkit-transform: scale(0) translate(30px, -15px);
+          transform: scale(0) translate(30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp2 #oval2 {
+  -webkit-transform: scale(0) translate(60px, -15px);
+          transform: scale(0) translate(60px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp3 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 0px);
+          transform: scale(0) translate(30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp3 #oval2 {
+  -webkit-transform: scale(0) translate(60px, 10px);
+          transform: scale(0) translate(60px, 10px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp4 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 15px);
+          transform: scale(0) translate(30px, 15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp4 #oval2 {
+  -webkit-transform: scale(0) translate(40px, 50px);
+          transform: scale(0) translate(40px, 50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp5 #oval1 {
+  -webkit-transform: scale(0) translate(-10px, 20px);
+          transform: scale(0) translate(-10px, 20px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp5 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, 30px);
+          transform: scale(0) translate(-60px, 30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp6 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, 0px);
+          transform: scale(0) translate(-30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp6 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, -5px);
+          transform: scale(0) translate(-60px, -5px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox:checked + label svg #grp7 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, -15px);
+          transform: scale(0) translate(-30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp7 #oval2 {
+  -webkit-transform: scale(0) translate(-55px, -30px);
+          transform: scale(0) translate(-55px, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1 {
+  display: none;
+}
+
+#checkbox1:checked + label svg #heart {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  fill: #e2264d;
+  -webkit-animation: animateHeart 0.3s linear forwards 0.25s;
+          animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+#checkbox1:checked + label svg #main-circ {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: animateCircle 0.3s linear forwards;
+          animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+
+#checkbox1:checked + label svg #grp1 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp1 #oval1 {
+  -webkit-transform: scale(0) translate(0, -30px);
+          transform: scale(0) translate(0, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp1 #oval2 {
+  -webkit-transform: scale(0) translate(10px, -50px);
+          transform: scale(0) translate(10px, -50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp2 #oval1 {
+  -webkit-transform: scale(0) translate(30px, -15px);
+          transform: scale(0) translate(30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp2 #oval2 {
+  -webkit-transform: scale(0) translate(60px, -15px);
+          transform: scale(0) translate(60px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp3 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 0px);
+          transform: scale(0) translate(30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp3 #oval2 {
+  -webkit-transform: scale(0) translate(60px, 10px);
+          transform: scale(0) translate(60px, 10px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp4 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 15px);
+          transform: scale(0) translate(30px, 15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp4 #oval2 {
+  -webkit-transform: scale(0) translate(40px, 50px);
+          transform: scale(0) translate(40px, 50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp5 #oval1 {
+  -webkit-transform: scale(0) translate(-10px, 20px);
+          transform: scale(0) translate(-10px, 20px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp5 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, 30px);
+          transform: scale(0) translate(-60px, 30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp6 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, 0px);
+          transform: scale(0) translate(-30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp6 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, -5px);
+          transform: scale(0) translate(-60px, -5px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox1:checked + label svg #grp7 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, -15px);
+          transform: scale(0) translate(-30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp7 #oval2 {
+  -webkit-transform: scale(0) translate(-55px, -30px);
+          transform: scale(0) translate(-55px, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox1:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox1:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2 {
+  display: none;
+}
+
+#checkbox2:checked + label svg #heart {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  fill: #e2264d;
+  -webkit-animation: animateHeart 0.3s linear forwards 0.25s;
+          animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+#checkbox2:checked + label svg #main-circ {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: animateCircle 0.3s linear forwards;
+          animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+
+#checkbox2:checked + label svg #grp1 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp1 #oval1 {
+  -webkit-transform: scale(0) translate(0, -30px);
+          transform: scale(0) translate(0, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp1 #oval2 {
+  -webkit-transform: scale(0) translate(10px, -50px);
+          transform: scale(0) translate(10px, -50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp2 #oval1 {
+  -webkit-transform: scale(0) translate(30px, -15px);
+          transform: scale(0) translate(30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp2 #oval2 {
+  -webkit-transform: scale(0) translate(60px, -15px);
+          transform: scale(0) translate(60px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp3 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 0px);
+          transform: scale(0) translate(30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp3 #oval2 {
+  -webkit-transform: scale(0) translate(60px, 10px);
+          transform: scale(0) translate(60px, 10px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp4 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 15px);
+          transform: scale(0) translate(30px, 15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp4 #oval2 {
+  -webkit-transform: scale(0) translate(40px, 50px);
+          transform: scale(0) translate(40px, 50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp5 #oval1 {
+  -webkit-transform: scale(0) translate(-10px, 20px);
+          transform: scale(0) translate(-10px, 20px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp5 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, 30px);
+          transform: scale(0) translate(-60px, 30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp6 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, 0px);
+          transform: scale(0) translate(-30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp6 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, -5px);
+          transform: scale(0) translate(-60px, -5px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+#checkbox2:checked + label svg #grp7 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, -15px);
+          transform: scale(0) translate(-30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp7 #oval2 {
+  -webkit-transform: scale(0) translate(-55px, -30px);
+          transform: scale(0) translate(-55px, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+#checkbox2:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+#checkbox2:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+@-webkit-keyframes animateCircle {
+  40% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+  }
+  55% {
+    -webkit-transform: scale(11);
+            transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+  }
+  65% {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+  }
+  75% {
+    -webkit-transform: scale(13);
+            transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+  }
+  85% {
+    -webkit-transform: scale(17);
+            transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+  }
+  95% {
+    -webkit-transform: scale(18);
+            transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(19);
+            transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateCircle {
+  40% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+  }
+  55% {
+    -webkit-transform: scale(11);
+            transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+  }
+  65% {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+  }
+  75% {
+    -webkit-transform: scale(13);
+            transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+  }
+  85% {
+    -webkit-transform: scale(17);
+            transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+  }
+  95% {
+    -webkit-transform: scale(18);
+            transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(19);
+            transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+  }
+}
+
+@-webkit-keyframes animateHeart {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animateHeartOut {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateHeartOut {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=UserComments.css.map */

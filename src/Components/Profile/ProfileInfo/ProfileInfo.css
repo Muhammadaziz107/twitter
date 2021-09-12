@@ -98,3 +98,27 @@
 .span3__p__strong {
   margin-right: 5px;
 }
+.dark .span1__h3 {
+  color: #fff;
+}
+.dark .span1__p {
+  color: #fff;
+}
+.dark .profileinfo__p {
+  color: #fff;
+}
+.dark .profileinfo__p__a {
+  color: #fff;
+}
+.dark .span2__p1 {
+  color: #fff;
+}
+.dark .span2__p2 {
+  color: #fff;
+}
+.dark .span2__p3 {
+  color: #fff;
+}
+.dark .span3__p {
+  color: #fff;
+}

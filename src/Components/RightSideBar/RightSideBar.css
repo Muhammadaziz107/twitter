@@ -169,3 +169,12 @@
   color: #536471;
   margin-left: 5px;
 }
+.dark .users__list__item h5 {
+  color: #000;
+}
+.dark .faqs__span1 p {
+  color: #fff;
+}
+.dark .faqs__span2 p {
+  color: #fff;
+}

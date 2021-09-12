@@ -146,3 +146,6 @@
 .header-dark {
   color: white;
 }
+.dark .user-username {
+  color: #fff;
+}

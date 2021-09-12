@@ -1,5 +1,11 @@
 .profile-wrapper {
   margin: 0 auto;
+  overflow: scroll;
+  height: 730px;
+}
+
+.profile-wrapper::-webkit-scrollbar {
+  width: 0;
 }
 
 .profile__header {
@@ -36,4 +42,13 @@
 .profileinfo__wrapper2 {
   border: 1px solid #c4c4c4;
   border-bottom: none;
+}
+.dark .header__username {
+  color: #fff;
+}
+.dark .header__password {
+  color: #fff;
+}
+.dark .back-btn path {
+  fill: #fff;
 }
