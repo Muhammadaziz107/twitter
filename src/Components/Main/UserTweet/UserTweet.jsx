@@ -1,17 +1,18 @@
 import React, { useRef } from "react";
 
+import "./UserTweet.css";
 import UserLogo from "../../../Assets/images/user-logo.jpg";
 import Vector1 from "../../Lib/Vector1";
 import Vector2 from "../../Lib/Vector2";
 import Vector3 from "../../Lib/Vector3";
 import Vector4 from "../../Lib/Vector4";
 import Vector5 from "../../Lib/Vector5";
-import "./UserTweet.css";
-
+import useLang from "../../../Hooks/useLang";
+import content from "../../../Localization/Content";
 import { Context } from "../../../Context/Theme";
 function UserTweet() {
   const tweetBtn = useRef();
-  // const [tweet, setTweet] = useState();
+  const [lang] = useLang();
   const { theme } = React.useContext(Context);
 
   return (
@@ -29,7 +30,7 @@ function UserTweet() {
           <input
             className={`input ${theme}`}
             type="text"
-            placeholder="What’s happening"
+            placeholder={content[lang].introplaceholder}
           />
           <div>
             <button className="btn-typing" type="button">
@@ -49,7 +50,7 @@ function UserTweet() {
             </button>
           </div>
         </span>
-        <button disabled className="tweet-btn" type="button" ref={tweetBtn}>
+        <button className="tweet-btn" ref={tweetBtn}>
           Tweet
         </button>
       </div>

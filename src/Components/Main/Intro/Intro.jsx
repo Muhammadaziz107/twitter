@@ -4,8 +4,9 @@ import ThemeIcon from "../../Lib/ThemeIcon";
 import "./Intro.css";
 import useTheme from "../../../Hooks/useTheme";
 import content from "../../../Localization/Content";
+import useLang from "../../../Hooks/useLang";
 function Intro() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useLang("en");
   const [theme, setTheme] = useTheme();
 
   return (

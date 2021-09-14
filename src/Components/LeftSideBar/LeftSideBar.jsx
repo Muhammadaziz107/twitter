@@ -14,7 +14,7 @@ import Home from "../../Pages/Home/Home";
 
 import useLang from "../../Hooks/useLang";
 import content from "../../Localization/Content";
-import { Context } from "../../Context/Lang";
+
 function Header() {
   const [lang] = useLang();
   return (
@@ -31,37 +31,37 @@ function Header() {
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/explore">
-              Explore
+              {content[lang].explore}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/notifications">
-              Notifications
+              {content[lang].notifications}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/messages">
-              Messages
+              {content[lang].messages}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/bookmarks">
-              Bookmarks
+              {content[lang].bookmarks}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/lists">
-              Lists
+              {content[lang].lists}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/profile">
-              Profile
+              {content[lang].profile}
             </NavLink>
           </li>
           <li className="list__item">
             <NavLink className="list__item__link" to="/more">
-              More
+              {content[lang].more}
             </NavLink>
           </li>
         </ul>

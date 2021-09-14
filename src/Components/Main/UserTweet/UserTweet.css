@@ -30,7 +30,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin: 0 3px;
+  margin: 0 -15px;
 }
 .user-logo {
   width: 60px;
